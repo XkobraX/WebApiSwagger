@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UserApi</name>
+    </assembly>
+    <members>
+        <member name="M:UserApi.Controllers.LoginController.Post(UserApi.Data.Entities.User,UserApi.Data.Migrations.UserRepository,UserApi.Security.SigningConfigurations,UserApi.Security.TokenConfigurations)">
+            <summary>
+            Loga no sistema e valida o Token JWT
+            ex de utilização : "{ "login": "PedroADM","acessKey": "94be650011cf412ca906fc335f615cdc" }"
+            </summary>
+            <param>Usuario</param>
+            <returns> Autentica por JWT</returns>
+        </member>
+        <member name="M:UserApi.Controllers.UserController.Get">
+            <summary>
+            Recupera os Usuários da base.
+            </summary>
+            <returns> Retorna todos os usuários cadastrados</returns>
+        </member>
+        <member name="M:UserApi.Controllers.UserController.Get(System.String)">
+            <summary>
+            Recupera um Usuário especifico por CPF.
+            </summary>
+            <param>String - CPF</param>
+            <returns> Retorna um usuário cadastrado</returns>
+        </member>
+        <member name="M:UserApi.Controllers.UserController.Post(UserApi.Models.UserModel)">
+            <summary>
+             Cria novo usuário.
+            </summary>
+            <param>UserModel</param>
+            <returns> Usuário cadastrado - Created</returns>
+        </member>
+        <member name="M:UserApi.Controllers.UserController.Put(System.String,UserApi.Models.UserModel)">
+            <summary>
+             Altera usuário.
+            </summary>
+            <param>UserModel e CPF</param>
+            <returns> Usuário cadastrado - Atualizado</returns>
+        </member>
+        <member name="M:UserApi.Controllers.UserController.Delete(System.String)">
+            <summary>
+             Deleta usuário cadastrado.
+            </summary>
+            <param>CPF</param>
+            <returns> OK - 202</returns>
+        </member>
+    </members>
+</doc>
